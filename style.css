@@ -1,0 +1,8 @@
+/*feuille de style*/ 
+h1 {text-align: center;text-transform:uppercase;}
+h2 {text-decoration: underline;}
+strong {color:brown;}
+em {font-style:unset;font-weight: bold; }
+a { color:red;}
+a:hover { text-decoration: none; }
+a:visited { color:blue;}
