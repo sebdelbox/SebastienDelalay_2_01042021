@@ -16,18 +16,18 @@ input {
 @media all and (max-width: 1024px) {
     body { font-size:large; }
     h1, h2 { font-size: 2.5em; }
-    p { font-size: 1.5em; }
+    p { font-size: 1em; }
     input { font-size: 2.5em; }
 }
 a { color: #0065FC; text-decoration: none; }
 a:hover { text-decoration: underline; }
+i { 
+    margin: 0px;
+    //margin-right:8px;
+}
 
 /* debut HEADER*/
 #logo { width: 100px; margin-bottom: 10px; }
-i { 
-    color: #0065FC;
-    margin-right:8px;
-}
 @media all and (max-width: 1024px) {
     #logo { width: 250px; margin-bottom: 20px; float: left; }
 }
@@ -48,6 +48,7 @@ i {
     #nav_main { font-size: 2em; } 
     .element:nth-child(3) { order: 1;}/*à revoir*/
 }
+
 /*debut bouton rechercher*/
 .element_1   {
     display: flex;
@@ -96,26 +97,51 @@ a.lnk_recherche {
     text-decoration: none;
 }
 /*fin bouton rechercher*/
+
 /*debut filtre*/
 .icone {
-    border-radius: 10px;
-    background-color: #F2F2F2;
+    width: 15px;
+    height: 15px;
+    padding: 10px;
+    border-radius: 50%;
     margin: 0px;
-    padding:2px;
+    color: #0065FC;
+    background-color: #F2F2F2;
+    text-align: center;
+}
+@media all and (max-width: 1024px) {
+    .icone {
+        width: 50px;
+        height: 50px;
+    }
+}
+.icone_txt {
+    padding: 10px;
 }
 .filtre{
-    //height:20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;  
+    height:min-content;
     font-size: 1em;
-    border-radius: 10px;
-    border: 1px solid #DEEBFF;
+    border-radius: 20px;
+    border: 2px solid #F2F2F2;
     border-left: 0px;
-    padding: 6px;
+    padding: 0px;
     width: max-content;
+    height: min-content;
     margin-left: 20px;
-
+}
+@media all and (max-width: 1024px) {
+    .filtre{
+        font-size: 3em;
+        border-radius: 40px;
+        width: max-content;
+        margin-top: 20px;
+    }
 }
 a.a_filtre {
-    color:black;
+    color:#000000;
     text-decoration:none;
 }
 .txt_filtre {
@@ -123,18 +149,12 @@ a.a_filtre {
     font-size: 1em;
 }
 @media all and (max-width: 1024px) {
-    .filtre{
-        font-size: 3em;
-        border-radius: 10px;
-        border: 1px solid #DEEBFF;
-        padding: 6px;
-        width: max-content;
-        margin-top: 20px;
-
-    }
     .txt_filtre {
-        padding:6px 20px 0px 0px;
+        padding-right: 20px;
         font-size: 3em;
+    }
+    .alerte { /*ALERTE TEMPORAIRE*/
+        display: none;
     }
 }
 .element_2 { /*éléments filtre*/
@@ -144,6 +164,7 @@ a.a_filtre {
     flex-direction: row;
     flex-wrap: nowrap;
     margin-top: 20px;
+    vertical-align: middle;
     
 }
 @media all and (max-width: 1024px) {
@@ -153,6 +174,43 @@ a.a_filtre {
     }
 }
 /*fin filtre*/
+
+/*debut info*/
+.info {
+    width:max-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-top: 15px;
+    vertical-align: middle;
+}
+.lnk_info { 
+    font-size: 0.6em;
+    font-weight:bold; 
+    border: 1px solid;
+    border-radius: 50%;
+    border-color: #F2F2F2;
+    padding: 2px;
+    width: 13px;
+    height: 13px;
+    text-align: center;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+a.a_info { 
+    color: #0065FC; 
+    text-decoration: none; 
+}
+a.a_info:hover { text-decoration: none; }
+@media all and (max-width: 1024px) {
+    .info { font-size: 1.9em; margin: 50px 0px 50px 0px; }
+    .lnk_info { 
+        font-size: 0.9em; 
+        width: 40px;
+        height: 40px;
+    }
+}
+/*fin info*/
 /*fin HEADER*/
 
 /*debut BODY*/
@@ -176,6 +234,24 @@ section {
         font-size: 2.5em;
     }
 }
+a.article { color: #000000; text-decoration: none; }
+a.article:hover { text-decoration: none; }
+
+/*debut avis (petite étoile)*/
+.avis {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    font-size: 0.8em;
+    color:#F2F2F2;
+    margin-left: 4px;
+}
+.avis_pos {
+    color:#0065FC;
+    margin-left: 0px;
+}
+/*fin avis*/
+
 /*debut hebergement*/
 .section_hebergement {
     
@@ -187,7 +263,7 @@ section {
     border-radius: 10px;
 }
 @media all and (max-width: 1024px) {
-    .conteneur_hebergement { width:100%; }
+    .conteneur_hebergement { width:96%; }
 }
 .articles_hebergement {
     display: flex;
@@ -213,6 +289,9 @@ section {
     .article_hebergement {
         width: 100%; 
     }
+}
+.article_txt {
+    margin: 0px 0px 4px 4px;
 }
 /*fin hebergement*/
 /*debut BODY*/
