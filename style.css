@@ -145,16 +145,16 @@ a.a_filtre {
     text-decoration:none;
 }
 .txt_filtre {
-    padding:6px 20px 0px 0px;
+    padding: 0px 20px 0px 0px;
     font-size: 1em;
+    height: 40px; /* 100% ne fonctionne pas */
+    display: flex;
+    align-items: center;
 }
 @media all and (max-width: 1024px) {
     .txt_filtre {
         padding-right: 20px;
         font-size: 3em;
-    }
-    .alerte { /*ALERTE TEMPORAIRE*/
-        display: none;
     }
 }
 .element_2 { /*éléments filtre*/
