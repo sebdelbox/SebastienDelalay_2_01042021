@@ -272,14 +272,25 @@ a.article:hover { text-decoration: none; }
     margin-left: 0px;
 }
 /*fin avis*/
-
-/*debut hebergement*/
-.section_hebergement {
-    
+.conteneur {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
 }
+@media all and (max-width: 1024px) {
+    .conteneur {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+/*debut hebergement*/
 .conteneur__hebergement {
     width:65%;
     padding: 20px;
+    margin: 0px;
     background-color:#F2F2F2;
     border-radius: 10px;
 }
@@ -318,6 +329,7 @@ a.article:hover { text-decoration: none; }
 }
 .article__txt {
     margin: 0px 0px 4px 4px;
+    font-size: 1em;
 }
 @media all and (max-width: 1024px) {
     .article__txt {
@@ -325,7 +337,39 @@ a.article:hover { text-decoration: none; }
     }
 }
 /*fin hebergement*/
-/*debut BODY*/
+/*debut les + populaires*/
+aside {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.conteneur__populaire {
+    width:26%;
+    margin: 0px;
+    padding: 20px;
+    background-color:#F2F2F2;
+    border-radius: 10px;
+}
+.article__populaire {
+    width: 100%;
+    height: min-content;
+    padding: 4px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 2px silver;
+}
+.texte__populaire {
+    font-size: 0.8em;
+
+}
+.photo_small_populaire {
+    border-radius: 10px 0px 0px 10px;
+    float:left;
+    margin-right: 10px;
+}
+/*fin les + populaires*/
+/*fin BODY*/
 
 /*Debut FOOTER*/
 footer {
