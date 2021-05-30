@@ -24,7 +24,6 @@ p {
 }
 input {
     font-family: "Raleway", Arial, Helvetica, sans-serif;
-    /*font-size: 14px;*/
     border-style: solid;
     border-color: #F2F2F2;
     font-weight: bold;
@@ -33,12 +32,6 @@ input {
 @media all and (max-width: 1024px) {
     body { 
         font-size: 2.2em;
-    }
-    h1, h2 { 
-        /*font-size: 62px; */
-    }
-    p { 
-        /*font-size: 20px; */
     }
     input { 
         font-size: 1.2em;
@@ -79,7 +72,6 @@ header {
     margin-right: 50px; 
     vertical-align: bottom;/*ça marche pas*/
 }
-
 .nav__main2 { 
     margin-right: 50px; 
 }
@@ -93,7 +85,6 @@ header {
     color: #0065FC;
 }
 @media all and (max-width: 1024px) {
-
     #main { 
         display: none;
         flex-wrap: wrap; 
@@ -114,12 +105,7 @@ header {
         width: 50%;
         text-align: center;
     }
-    #nav__main { 
-        /*font-size: 2em; */
-    } 
-    
-}
-
+ }
 /*debut bouton rechercher*/
 #recherche { 
     padding: 0px 20px 0px 20px;
@@ -129,7 +115,6 @@ header {
     flex-direction: row;
     flex-wrap: nowrap;
 }
-
 #btn_position {
     color: #000000;
     background-color: #F2F2F2;
@@ -144,7 +129,6 @@ header {
     #btn_position {
         width: 60px;
         height: 60px;
-        /*font-size: 2em;*/
     }
 }
 #btn_position:hover {
@@ -152,11 +136,6 @@ header {
 }
 #btn_fleche {
     color: #000000;
-}
-@media all and (max-width: 1024px) {
-    #btn_fleche {
-        /*font-size: 3em;*/
-    }
 }
 #btn_fleche:hover {
     color: #0065FC;
@@ -173,7 +152,6 @@ header {
     #btn_recherche {
         background-color: #0065FC;
         height: 60px;
-        /*font-size: 3em;*/
         text-align: center;
         border-radius: 0px 10px 10px 0px;
         padding: 10px 10px 0px 10px;
@@ -181,15 +159,12 @@ header {
     }
 }
 a.lnk_recherche {
-    /*font-size: 0.8em;*/
     color: #FFFFFF;
     text-decoration: none;
 }
 /*fin bouton rechercher*/
-
 /*debut filtre*/
 .icone {
-    /*font-size: 14px;*/
     width: 15px;
     height: 15px;
     padding: 10px;
@@ -201,7 +176,6 @@ a.lnk_recherche {
 }
 @media all and (max-width: 1024px) {
     .icone {
-        /*font-size: 40px;*/
         width: 50px;
         height: 50px;
     }
@@ -215,7 +189,6 @@ a.lnk_recherche {
     flex-wrap: nowrap;  
     height:min-content;
     align-items: center;
-    /*font-size: 1em;*/
     border-radius: 20px;
     border: 2px solid #F2F2F2;
     border-left: 0px;
@@ -226,7 +199,6 @@ a.lnk_recherche {
 }
 @media all and (max-width: 1024px) {
     .filtre{
-        /*font-size: 3em;*/
         border-radius: 40px;
         width: max-content;
         margin-top: 20px;
@@ -238,7 +210,6 @@ a.a_filtre {
 }
 .txt_filtre {
     padding: 0px 20px 0px 0px;
-    /*font-size: 1em;*/
     height: 40px; 
     display: flex;
     align-items: center;
@@ -246,11 +217,9 @@ a.a_filtre {
 @media all and (max-width: 1024px) {
     .txt_filtre {
         padding-right: 20px;
-        /*font-size: 3em;*/
     }
 }
 .element_2 { /*éléments filtre*/
-    /*font-size: 0.8em;*/
     font-weight: bold;
     display: flex;
     flex-direction: row;
@@ -266,7 +235,6 @@ a.a_filtre {
     }
 }
 /*fin filtre*/
-
 /*debut info*/
 .info {
     width:max-content;
@@ -277,7 +245,6 @@ a.a_filtre {
     vertical-align: middle;
 }
 .lnk_info { 
-    /*font-size: 14px;*/
     font-weight:bold; 
     border: 1px solid;
     border-radius: 50%;
@@ -297,11 +264,9 @@ a.a_info:hover { text-decoration: none; }
 @media all and (max-width: 1024px) {
     .info { 
         width: 100%;
-        /*font-size: 40px; */
         margin: 50px 0px 50px 0px; 
     }
     .lnk_info { 
-        /*font-size: 30px; */
         width: 40px;
         height: 40px;
     }
@@ -325,10 +290,8 @@ section {
         width:100%;
     }
 }
-
 a.article { color: #000000; text-decoration: none; }
 a.article:hover { text-decoration: none; }
-
 /*debut avis (petite étoile)*/
 .avis {
     display: flex;
@@ -347,7 +310,6 @@ a.article:hover { text-decoration: none; }
 .avis_pos {
     color:#0065FC;
 }
-
 /*fin avis*/
 .conteneur {
     display: flex;
@@ -406,7 +368,6 @@ a.article:hover { text-decoration: none; }
 }
 .afficher_plus {
     color: #000000;
-    /*font-size: 0.8em;*/
     font-weight: bold;
 }
 .afficher_plus:hover {
@@ -416,7 +377,6 @@ a.article:hover { text-decoration: none; }
 @media all and (max-width: 1024px) {
     .afficher_plus {
         color: #000000;
-        /*font-size: 2em;*/
         margin: 20px 0px 20px 0px;
     }
 }
@@ -451,7 +411,7 @@ aside {
         width: 90%;
     }
 }
-.article__label {/* à revoir pour l'alignement des étoiles en bas */
+.article__label {
     height: 110px;
 }
 @media all and (max-width: 1024px) {
@@ -459,7 +419,6 @@ aside {
         height: 300px;
     }
 }
-
 .article__populaire {
     width: 100%;
     height: min-content;
@@ -477,12 +436,10 @@ aside {
     }
 }
 .article__populaire__txt {
-    /*font-size: 0.9em;*/
     margin: 4px;
 }
 @media all and (max-width: 1024px) {
     .article__populaire__txt {
-        /*font-size: 2.5em;*/
         margin: 10px;
     }
 }
@@ -502,7 +459,6 @@ aside {
 .conteneur__activites {
     display: flex;
     flex-direction: row;
-    
 }
 .article_activite {
     padding: 5px;
@@ -547,7 +503,6 @@ footer {
     }
     .footer{ 
         width:100%; 
-        /*font-size:1.8em;*/ 
     }
 }
 /*fin FOOTER*/
