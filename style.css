@@ -469,8 +469,7 @@ aside {
 }
 @media all and (max-width: 1024px) {
     .conteneur__activites {
-        flex-direction: column;
-        justify-content: space-between;
+        flex-direction: row;
     }
 }
 .photos_x2 {
