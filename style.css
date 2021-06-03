@@ -3,6 +3,8 @@ body {
     font-family: "Raleway", Arial, Helvetica, sans-serif;
     font-size: 14px;
     margin: 0px;
+    max-width: 1280px;
+    margin: 0 auto;
 }
 h1, h2 { 
     font-size: 1.4em;
@@ -10,6 +12,9 @@ h1, h2 {
 h3 { 
     font-size: 1em;
     margin: 0px;
+}
+h3.article__activite {
+    margin: 10px 0px 10px 10px;
 }
 h4 {
     margin-top: 0px;
@@ -313,7 +318,10 @@ a.article:hover { text-decoration: none; }
     color:#0065FC;
 }
 /*fin avis*/
-.conteneur {
+.conteneur { 
+    max-width: 1280px;
+    margin: 0 auto;
+    text-align: left;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -461,17 +469,21 @@ aside {
 .conteneur__activites {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
 }
-.article_activite {
-    padding: 5px;
+.article__activite {
+    padding: 0px;
     background-color: #FFFFFF;
     border-radius: 10px;
-    margin: 10px;
+    margin: 0px;
     box-shadow: 2px 2px 2px silver;
 }
 @media all and (max-width: 1024px) {
-    .conteneur__activites {
-        flex-direction: row;
+    .conteneur__activites { 
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
     }
 }
 .photos_x2 {
