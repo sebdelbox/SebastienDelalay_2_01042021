@@ -445,14 +445,6 @@ aside {
         margin-right: 20px;
     }
 }
-.article__populaire__txt {
-    margin: 4px;
-}
-@media all and (max-width: 1024px) {
-    .article__populaire__txt {
-        margin: 10px;
-    }
-}
 .photo_small_populaire {
     border-radius: 10px 0px 0px 10px;
     float:left;
