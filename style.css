@@ -50,20 +50,20 @@ i { margin: 0px; }
 header {
     padding: 10px 20px 0px 20px;
 }
-#logo { width: 100px; margin-bottom: 10px; }
+.logo { width: 100px; margin-bottom: 10px; }
 @media all and (max-width: 1024px) {
-    #logo { width: 250px; margin-bottom: 20px; float: left; }
+    .logo { width: 250px; margin-bottom: 20px; }
 }
-#main_smart {
+.main_smart {
     display: none;
 }
-#main {
+.main {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
 }
-#nav__main {
+.nav__main {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -75,7 +75,7 @@ header {
     border-top: 3px solid #0065FC;
     color: #0065FC;
     margin-right: 50px; 
-    vertical-align: bottom;/*ça marche pas*/
+    vertical-align: bottom;
 }
 .nav__main2 { 
     margin-right: 50px; 
@@ -83,18 +83,18 @@ header {
 .nav__main3 {
     font-weight: bold;
 }
-#nav__main2 { 
+.lnk__main2 { 
     color: #000000;
 }
-#nav__main2:hover {
+.lnk__main2:hover {
     color: #0065FC;
 }
 @media all and (max-width: 1024px) {
-    #main { 
+    .main { 
         display: none;
         flex-wrap: wrap; 
     }
-    #main_smart {
+    .main_smart {
         display:flex;
         flex-direction: column;
         flex-wrap: wrap; 
