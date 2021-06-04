@@ -80,14 +80,14 @@ header {
 .nav__main2 { 
     margin-right: 50px; 
 }
-.nav__main3 {
-    font-weight: bold;
-}
 .lnk__main2 { 
     color: #000000;
 }
 .lnk__main2:hover {
     color: #0065FC;
+}
+.nav__main3 {
+    font-weight: bold;
 }
 @media all and (max-width: 1024px) {
     .main { 
@@ -373,7 +373,7 @@ a.article:hover { text-decoration: none; }
     .article__hebergement {
         width: 100%; 
         border-radius: 40px;
-        box-shadow: 20px silver;
+        box-shadow: 4px 4px 4px silver;
     }
 }
 .afficher_plus {
