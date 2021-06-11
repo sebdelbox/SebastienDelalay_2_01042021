@@ -335,6 +335,7 @@ footer {
 .footer{ width:33%; }
 /*fin FOOTER*/
 
+/*RESPONSIVE*/
 @media all and (max-width: 1024px) {
     body { 
         font-size: 2.2em;
