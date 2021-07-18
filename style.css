@@ -211,15 +211,12 @@ a.article { color: #000000; text-decoration: none; }
 a.article:hover { text-decoration: none; }
 /*debut avis (petite étoile)*/
 .avis {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    margin-left: 4px;
     color:#F2F2F2;
-    margin-right: 40px;
+    display: inline-block;
 }
 .avis_pos {
     color:#0065FC;
+    display: inline-block;
 }
 /*fin avis*/
 .conteneur {
@@ -281,7 +278,7 @@ aside {
     width: 100%;
 }
 .article__label {
-    height: 110px;
+    /* height: 110px; */
 }
 .article__populaire {
     width: 100%;
@@ -445,11 +442,14 @@ footer {
         width: 50px;
         height: 50px;
     }
+    .container-filters {
+        margin-top: 20px;
+    }
     .filtre{
         border-radius: 40px;
         /* width: max-content; */
         width: 90%;
-        margin-top: 20px;
+        margin-top: 0px;
     }
     .txt_filtre {
         padding-right: 20px;
@@ -457,6 +457,7 @@ footer {
     .element_2   {
         flex-direction: row;
         flex-wrap: wrap;
+        margin-top: 0;
     }
     .element_2  > a {
         width: 46%;
@@ -478,8 +479,8 @@ footer {
         width:100%;
     }
     .avis {
-        margin-right: 20px;
-        margin-left: 20px;
+        /* margin-right: 20px;
+        margin-left: 20px; */
     }
     .conteneur {
         flex-direction: column-reverse;
@@ -488,22 +489,38 @@ footer {
         margin: 0px;
     }
     .conteneur__hebergement {
-        width:96%;
+        margin: 0; padding: 0;
+        width:100%;
         background-color: #FFFFFF;
+    }
+    h2#hebergement {
+        padding: 0 20px;
     }
     .articles__hebergement {
         flex-direction: column;
         justify-content:space-between;
-        margin-right: 20px;
+    }
+    .article__hebergement .article {
+        flex-direction: column;
     }
     .article__hebergement {
-        width: 100%;
-        border-radius: 40px;
+        width: 94%;
+        margin: 6px auto;
+        border-radius: 10px;
         box-shadow: 4px 4px 4px silver;
+    }
+    .article__hebergement .photo_small {
+        border-radius: 10px 10px 0 0;
+        max-width:100%;
+        display: block;
+        max-height: 200px;
     }
     .afficher_plus {
         color: #000000;
         margin: 20px 0px 20px 0px;
+    }
+    .titre_populaire {
+        padding-left: 0 20px;;
     }
     .conteneur__populaire {
         width: 100%;
@@ -512,22 +529,52 @@ footer {
         background-color:#F2F2F2;
         border-radius: 0px;
     }
+    .title-most-popular {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    .container-most-popular {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+
+    .conteneur__populaire {
+        display: block;
+        padding: 0;
+        margin: 0;
+    }
+
     .titre_populaire {
         width: 90%;
     }
-    .article__label {
-        height: 300px;
+
+    .article {
+        display: flex;
     }
+    .article__label {
+        /* height: 300px; */
+    }
+
     .article__populaire {
-        width: 95%;
+        width: 92%;
+        margin: 0 auto 10px auto;
         border-radius: 40px;
-        margin-right: 20px;
     }
     .photo_small_populaire {
         width: 40%;
         border-radius: 40px 0px 0px 40px;
     }
-
+    .article__desc {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
     .container-activites {
         padding: 10px 20px;
     }
@@ -535,6 +582,10 @@ footer {
     .conteneur__activites-2 {
         flex-direction: column;
         flex-wrap: nowrap;
+    }
+    .article__activite {
+        border-radius: 40px;
+        margin: 6px auto;
     }
     footer {
         flex-direction: column;
